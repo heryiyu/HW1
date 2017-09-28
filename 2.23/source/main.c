@@ -3,27 +3,24 @@
 
 int main()
 {
-	while (1)
-	{ 
+
 		int a, b, c, d, j;
-		int i = 1;
 		printf("Enter three integers separated by space:");
 		scanf_s("%d %d %d", &a, &b, &c);
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < 4;j++)
 		{
 			if (a < b)
 			{
-				d = a; a = b; b = d; i = 1;
+				d = a; a = b; b = d;
 			}
 			else if (b < c)
 			{
-				d = b; b = c; c = d; i = 1;
+				d = b; b = c; c = d;
 			}
 		}
 
 		printf("%d is the largest integer\n", a);
 		printf("%d is the smallest integer\n\n", c);
-	}
 	
 
 	system("pause");
